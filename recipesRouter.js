@@ -53,7 +53,8 @@ router.delete("/:id", (req, res) => {
 // of that, log error and send back status code 400. otherwise
 // call `Recipes.updateItem` with updated recipe.
 router.put("/:id", (req, res) => {
-  const requiredFields = ["name", "ingredients", "id"];
+  //const requiredFields = ["name", "ingredients", "id"];
+  const requiredFields = ["name", "id"];
   for (let i = 0; i < requiredFields.length; i++) {
     const field = requiredFields[i];
     if (!(field in req.body)) {
@@ -70,12 +71,12 @@ router.put("/:id", (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating shopping list item \`${req.params.id}\``);
-  Recipes.update({
+  const recipes = Recipes.update({
     id: req.params.id,
     name: req.body.name,
     ingredients: req.body.ingredients
   });
-  res.status(204).end();
+  res.status(200).json(recipes);
 });
 
 module.exports = router;
