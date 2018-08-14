@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy: nameless-lowlands-81655
+  provider: heroku
+  api_key:
+    secure: R7ihbIGlFHkihMKXVDG+MZwpQjuUV/xNtD0TnQC16G85OC4RpPhnpn9UO2t6/VjKx/z9ZXxb6hi3nL+3DqjPG42ckLmAni852wUoGsjmehqVFKTrmo1CEY0pQJ/sk/pqDCcEUUBKDKFH10qtKj4CIpIx6OYtCii8wdH235/NtdQs2EGw+DtyYpqTtgzejgcHJKANtx/bS9CAu9+/Yzn+QpDlyz2/kz1UE0n+wo6mXhhkgPHlnL84Rg+KXLSFr6uFH3TmLcbdwjLf+6giL0L6xeVMRPDbaxQWpYUD+f6w9YJ3gti6RIISw84ZrVUKyFvgKaGRhBtGKyH4hCBgtdZ0/j84NkYAd7nbIDtMdNl8sFh/bfklN0hdEaHaEkIkOjHDX+0mNr3zNicYtNPidGom7M8kriXtOTAIHTGYJrsyqPoUH4XGJynu1JD0mXym3GogQxiSNf5zj3F3kVXy+C/aHdTTb4oADQAzpg3OlSe70owgYi6sD/D52y3XPuUgS5GArU076nBkvWiDajIU7vAioipOewBa4WUdWK3EAKjPpRD0h5obUC4AxJAgdbMMjIpKIgcv4k08RoCT2/1E2EEukyrpYGeIsojtImwnEZDKo8UMZfWLju9/HjJxhBt+qoUyeDNjfBI5TkDWyQu+ERoaMzuxIXZRUMPDAOZ5tEiJ46k=
+  app: node-shopping-list-integration-tests
+  on:
+    repo: VainerV/node-shopping-list-integration-tests
